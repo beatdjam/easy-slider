@@ -1,0 +1,44 @@
+/* 一つ目のスライダー用 */
+#viewableArea {
+    overflow: hidden;
+    width: 102px; /* itemのwidth+border(100px + 2px) */
+}
+#slideArea {
+    position: relative;
+    left: -102px; /* item一つ分左にずらす(102px) */
+	width: 306px; /* li要素の個数分(102px * 3) */
+}
+
+#slideArea > ul{
+    padding-left: 0; /* デフォルトのスタイルシート削除用 */
+    list-style: none;
+}
+.item {
+    background-color: #e7e7e7; /* list領域をわかりやすくするため */
+    border:1px solid #000; /* list領域をわかりやすくするため */
+	float: left;
+    width: 100px; /* 変更可 */
+}
+
+/* 二つ目のスライダー用 */
+#viewableArea2 {
+    overflow: hidden;
+    width: 302px;
+}
+#slideArea2 {
+    position: relative;
+    left: -302px;
+    width: 906px;
+}
+
+#slideArea2 > ul{
+    padding-left: 0;
+    list-style: none;
+}
+.item2 {
+    background-color: #e7e7e7;
+    border:1px solid #000;
+	float: left;
+    width: 300px;
+    height: 100px;
+}
